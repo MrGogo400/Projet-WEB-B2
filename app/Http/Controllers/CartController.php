@@ -36,7 +36,7 @@ class CartController extends Controller
         return back();
     }
 
-    public function update($itemid)
+    public function update($rowId)
     {
         \Cart::session(auth()->id())->update($rowId, [
             'quantity' => array(
@@ -46,5 +46,10 @@ class CartController extends Controller
         ]);
 
         return back();
+    }
+
+    public function checkout()
+    {
+        return view('cart.checkout');
     }
 }

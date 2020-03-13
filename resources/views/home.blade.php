@@ -14,6 +14,7 @@
                 <div class="card-body">
                     <h4 class="card-title">{{$produit->name}}</h4>
                     <p class="card-text">{{$produit->description}}</p>
+                <h3>{{$produit->prix}}€</h3>
                 </div>
                 <div class="card-body">
                 <a href="{{ route('cart.add', $produit->id) }}" class="card-link">Ajouter au panier</a>

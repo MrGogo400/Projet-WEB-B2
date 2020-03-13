@@ -20,12 +20,11 @@
                 <tr>
                     <td scope="row">{{ $item->name }}</td>
                     <td>
-                        {{ $item->price }}
-                        {{ Cart::session(auth()->id())->get($item->id)->getPriceSum() }}
+                        {{Cart::session(auth()->id())->get($item->id)->getPriceSum()}}
                     </td>
                     <td>
-                    <form action="{{route('cart.update', $item->id)}}"></form>
-                        <input name="quantity" type="number" value = {{ $item->quantity }}>
+                    <form action="{{route('cart.update', $item->id)}}">
+                        <input name="quantity" type="number" value ="{{ $item->quantity }}">
 
                         <input type="submit" value="save">
 
@@ -39,4 +38,10 @@
             </tbody>
         </table>
 
+        <H3>
+            Total : {{\Cart::session(auth()->id())->getTotal()}} €
+        </H3>
+
+
+    <a class="btn btn-primary" href="{{ route('cart.checkout') }}" role="button">Continuer</a>
 @endsection

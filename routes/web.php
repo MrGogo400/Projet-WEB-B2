@@ -25,3 +25,10 @@ Route::get('/add-to-cart/{produit}', 'CartController@add')->name('cart.add')->mi
 Route::get('/cart', 'CartController@index')->name('cart.index')->middleware('auth');
 Route::get('/cart/destroy/{itemid}', 'CartController@destroy')->name('cart.destroy')->middleware('auth');
 Route::get('/cart/update/{itemid}', 'CartController@update')->name('cart.update')->middleware('auth');
+Route::get('/cart/checkout', 'CartController@checkout')->name('cart.checkout')->middleware('auth');
+
+Route::resource('orders', 'OrderController')->middleware('auth');
+
+Route::get('paypal/checkout', 'PayPalController@getExpressCheckout');
+Route::get('paypal/checkout-success', 'PayPalController@getExpressCheckoutSuccess')->name('paypal.success');
+Route::get('paypal/checkout-cancel', 'PayPalController@cancelPage')->name('paypal.cancel');
