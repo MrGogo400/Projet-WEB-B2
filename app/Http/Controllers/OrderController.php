@@ -78,7 +78,13 @@ class OrderController extends Controller
 
         $order->user_id = auth()->id();
 
+        if (request('payment_method') == 'paypal') {
+            $order->payment_method = 'paypal';
+        }
+
         $order->save();
+
+
 
         //sauvegarde items
 
@@ -90,17 +96,17 @@ class OrderController extends Controller
 
         //paiement
         if(request('payment_method') == 'paypal') {
-            return redirect()->route('paypal.checkout');
+            return redirect()->route('paypal.checkout', $order->id);
         }
 
         // vider panier
-            \Cart::session(auth()->id())->clear();
+        \Cart::session(auth()->id())->clear();
 
         //email
 
         //redirect vers merci
 
-        return "order completed";
+        return redirect()->route('home')->withMessage('Commander placer');
     }
 
     /**
