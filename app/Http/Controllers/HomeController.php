@@ -24,7 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $produits = Produit::take(20)->get();
-        return view('home', ['allproduits' => $produits]);
+        $produits = Produit::paginate(8);
+        // return view('home', ['allproduits' => $produits]);
+        return view('home',compact('produits')
+    );}
+
+    public function search(Request $request)
+    {
+        $search = $request->get('search');
+        $produits = \DB::table('produits')->where('name', 'like', '%'.$search.'%')->paginate(8);
+        return view ('home', ['produits' => $produits]);
     }
 }

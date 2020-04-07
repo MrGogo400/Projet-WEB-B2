@@ -1,28 +1,49 @@
 @extends('layouts.app')
 
+<head>
+    <style>
+    .pagination {
+        padding-left: 500px
+    }
+    </style>
+</head>
+
 @section('content')
+<div>
+    <form action="/search" method="get">
+        <div class="input-group">
+            <input type="search" name="search" class="form-control">
+            <span class="input-group-prepend">
+                <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
 <div class="container text-center">
     <h2>Produits</h2>
 
+
+
     <div class="row">
 
-        @foreach ($allproduits as $produit)
+        @foreach ($produits as $produit)
 
-        <div class="col-3">
-            <div class="card">
-                <img class="card-img-top" src="{{ asset('afn.png') }}" alt="Card image cap">
+        <div class="col-3 d-flex align-items-stretch">
+            <div class="card" style="margin-bottom: 15px">
+                <img class="card-img-top" src="afn.png" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">{{$produit->name}}</h4>
-                    <p class="card-text">{{$produit->description}}</p>
+                    <p class="card-text">{{ Str::limit($produit->description, 128) }}</p>
                 <h3>{{$produit->prix}}€</h3>
                 </div>
                 <div class="card-body">
-                <a href="{{ route('cart.add', $produit->id) }}" class="card-link">Ajouter au panier</a>
+                <a class="btn btn-outline-primary btn-sm" href="{{ route('cart.add', $produit->id) }}" class="card-link">Ajouter au panier</a>
                 </div>
             </div>
         </div>
         @endforeach
-
     </div>
 </div>
+<div class="align-center">
+{{ $produits->links() }}
+</div>
 @endsection
+

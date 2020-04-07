@@ -31,7 +31,7 @@
                     </form>
                     </td>
                     <td>
-                    <a href="{{ route('cart.destroy', $item->id) }}">Supprimer</a>
+                    <a class="btn btn-danger" href="{{ route('cart.destroy', $item->id) }}">Supprimer</a>
                     </td>
                 </tr>
     @endforeach

@@ -20,7 +20,7 @@ class CartController extends Controller
             'associatedModel' => $produit
         ));
 
-        return redirect()->route('cart.index');
+        return redirect()->back();
     }
 
     public function index()
