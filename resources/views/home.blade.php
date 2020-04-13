@@ -2,8 +2,39 @@
 
 <head>
     <style>
-    .pagination {
-        padding-left: 500px
+    .loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .loader > img {
+        width: 200px;
+    }
+
+    .loader.hidden {
+        animation: fadeOut 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .thumb {
+        height: 100px;
+        border: 1px solid black;
+        margin: 10px;
     }
     </style>
 </head>
@@ -17,8 +48,12 @@
                 <button type="submit" class="btn btn-primary">Search</button>
     </form>
 </div>
+
+<div class="loader">
+    <img src="https://cdn.dribbble.com/users/22930/screenshots/1986956/ramen_2.gif">
+</div>
 <div class="container text-center">
-    <h2>Produits</h2>
+    <h2 style="padding-bottom: 10px">Produits</h2>
 
 
 
@@ -48,5 +83,11 @@
 <div class="align-center">
 {{ $produits->links() }}
 </div>
-@endsection
 
+<script>
+    window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden";});
+    </script>
+
+@endsection
