@@ -14,6 +14,9 @@ RamenParty est un site d'e-commerce ayant comme principal but la vente de ramen.
 
 ![enter image description here](https://files.legroupedamis.best/KduDNO.png)
 
+### Page de connexion et d'enregistrement
+![enter image description here](https://files.legroupedamis.best/7hkABk.png)
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
@@ -64,6 +67,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTY4NDgwMywxNDc1NDA3MzE2LC0xOT
+eyJoaXN0b3J5IjpbMTQwMTcxMjM1MywxNDc1NDA3MzE2LC0xOT
 EyOTQ1NDUxLC0yOTEzNjY1NDddfQ==
 -->
