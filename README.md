@@ -6,7 +6,10 @@ RamenParty est un site d'e-commerce ayant comme principal but la vente de ramen.
 
 ## Technologies utilisées
 
-![enter image description here](https://laravel.com/img/logotype.min.svg)
+![enter image description here](https://raw.githubusercontent.com/laravel/art/master/logo-lockup/4%20PNG/3%20RGB/1%20Full%20Color/laravel-logolockup-rgb-red.png)
+
+![Laravel Voyager](https://voyager.devdojo.com/assets/images/logo_dark.png)
+
 
 ## Architecture du site
 
@@ -45,6 +48,6 @@ RamenParty est un site d'e-commerce ayant comme principal but la vente de ramen.
 ![enter image description here](https://files.legroupedamis.best/aQtBHb.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTk4MjU5NCwtMTU1MTU3NzM3MSwxND
+eyJoaXN0b3J5IjpbMTY5MzQwMTU1MSwtMTU1MTU3NzM3MSwxND
 c1NDA3MzE2LC0xOTEyOTQ1NDUxLC0yOTEzNjY1NDddfQ==
 -->
