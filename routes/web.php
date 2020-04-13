@@ -27,6 +27,8 @@ Route::get('/cart/destroy/{itemid}', 'CartController@destroy')->name('cart.destr
 Route::get('/cart/update/{itemid}', 'CartController@update')->name('cart.update')->middleware('auth');
 Route::get('/cart/checkout', 'CartController@checkout')->name('cart.checkout')->middleware('auth');
 
+Route::get('/productdetail/{id}','HomeController@productdetail');
+
 Route::resource('orders', 'OrderController')->middleware('auth');
 
 Route::get('paypal/checkout/{order}', 'PayPalController@getExpressCheckout')->name('paypal.checkout');

@@ -24,7 +24,7 @@
                     </td>
                     <td>
                     <form action="{{route('cart.update', $item->id)}}">
-                        <input name="quantity" type="number" value ="{{ $item->quantity }}">
+                        <input name="quantity" type="number" pattern="[0-9]*" min="1" value ="{{ $item->quantity }}">
 
                         <input type="submit" value="save">
 

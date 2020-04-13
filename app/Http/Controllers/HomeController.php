@@ -26,13 +26,19 @@ class HomeController extends Controller
     {
         $produits = Produit::paginate(8);
         // return view('home', ['allproduits' => $produits]);
-        return view('home',compact('produits')
-    );}
+        return view('home',compact('produits'))
+        ;}
 
     public function search(Request $request)
     {
         $search = $request->get('search');
         $produits = \DB::table('produits')->where('name', 'like', '%'.$search.'%')->paginate(8);
         return view ('home', ['produits' => $produits]);
+    }
+
+    public function productdetail($id){
+        $produits = Produit::findOrFail($id);
+
+        return view('productdetail',compact('produits'));
     }
 }

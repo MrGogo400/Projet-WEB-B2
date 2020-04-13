@@ -35,7 +35,8 @@
                 <h3>{{$produit->prix}}€</h3>
                 </div>
                 <div class="card-body">
-                <a class="btn btn-outline-primary btn-sm" href="{{ route('cart.add', $produit->id) }}" class="card-link">Ajouter au panier</a>
+                <a class="btn btn-outline-primary btn-sm" href="{{ route('cart.add', $produit->id) }}" class="card-link">Add to cart</a>
+                <a class="btn btn-outline-primary btn-sm" href="{{ url('productdetail', $produit->id) }}" class="card-link">Product detail</a>
                 </div>
             </div>
         </div>
