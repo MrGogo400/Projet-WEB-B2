@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/V4AiEtM.png" width="400"></p>
+<p align="center"><img src="https://i.imgur.com/rqGKyW8.png" width="400"></p>
 
 ## About Laravel
 
@@ -70,5 +70,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTI5NDU0NTEsLTI5MTM2NjU0N119
+eyJoaXN0b3J5IjpbMTQ3NTQwNzMxNiwtMTkxMjk0NTQ1MSwtMj
+kxMzY2NTQ3XX0=
 -->
