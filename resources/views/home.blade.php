@@ -11,7 +11,7 @@
 @section('content')
 <div>
     <form action="/search" method="get">
-        <div class="input-group">
+        <div class="input-group" style="padding-left: 55px; padding-right: 55px">
             <input type="search" name="search" class="form-control">
             <span class="input-group-prepend">
                 <button type="submit" class="btn btn-primary">Search</button>
@@ -28,7 +28,9 @@
 
         <div class="col-3 d-flex align-items-stretch">
             <div class="card" style="margin-bottom: 15px">
-                <img class="card-img-top" src="afn.png" alt="Card image cap">
+                <a href="{{ url('productdetail', $produit->id) }}">
+                    <img class="card-img-top" src="afn.png" alt="Card image cap">
+                </a>
                 <div class="card-body">
                     <h4 class="card-title">{{$produit->name}}</h4>
                     <p class="card-text">{{ Str::limit($produit->description, 128) }}</p>
