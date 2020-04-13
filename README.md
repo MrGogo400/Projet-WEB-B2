@@ -17,6 +17,8 @@ https://voyager.devdojo.com
 
 [https://github.com/srmklive/laravel-paypal](https://github.com/srmklive/laravel-paypal)
 
+## Diagramme base de données
+![enter image description here](https://files.legroupedamis.best/K8MhjD.png)
 
 ## Architecture du site
 
@@ -55,7 +57,7 @@ https://voyager.devdojo.com
 ![enter image description here](https://files.legroupedamis.best/aQtBHb.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njk2NjI2NjIsLTE0OTYzNzIxNjgsLT
-E1NTE1NzczNzEsMTQ3NTQwNzMxNiwtMTkxMjk0NTQ1MSwtMjkx
-MzY2NTQ3XX0=
+eyJoaXN0b3J5IjpbLTIwNDAyNDAxNTUsLTE0Njk2NjI2NjIsLT
+E0OTYzNzIxNjgsLTE1NTE1NzczNzEsMTQ3NTQwNzMxNiwtMTkx
+Mjk0NTQ1MSwtMjkxMzY2NTQ3XX0=
 -->
