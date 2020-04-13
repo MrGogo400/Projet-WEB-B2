@@ -12,7 +12,10 @@ RamenParty est un site d'e-commerce ayant comme principal but la vente de ramen.
 ![Laravel Voyager](https://voyager.devdojo.com/assets/images/logo_dark.png)
 https://voyager.devdojo.com
 
-## Package 
+## Package utilisés
+[https://github.com/darryldecode/laravelshoppingcart](https://github.com/darryldecode/laravelshoppingcart)
+
+[https://github.com/srmklive/laravel-paypal](https://github.com/srmklive/laravel-paypal)
 
 
 ## Architecture du site
@@ -52,6 +55,7 @@ https://voyager.devdojo.com
 ![enter image description here](https://files.legroupedamis.best/aQtBHb.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTYzNzIxNjgsLTE1NTE1NzczNzEsMT
-Q3NTQwNzMxNiwtMTkxMjk0NTQ1MSwtMjkxMzY2NTQ3XX0=
+eyJoaXN0b3J5IjpbLTE0Njk2NjI2NjIsLTE0OTYzNzIxNjgsLT
+E1NTE1NzczNzEsMTQ3NTQwNzMxNiwtMTkxMjk0NTQ1MSwtMjkx
+MzY2NTQ3XX0=
 -->
